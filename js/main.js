@@ -1,12 +1,11 @@
-const robotron = document.querySelector("#robotron") // busca o elemento através do queryselector
+const subtrair = document.querySelector("#subtrair")
+const somar = document.querySelector("#somar") 
+const braco = document.querySelector("#braco") 
 
-robotron.addEventListener("click", () => { // função anonima de seta
-    console.log('Cliquei no robo')
+somar.addEventListener("click", (evento) => { // função anonima de seta
+    braco.value = parseInt(braco.value) + 1
 }) 
 
-function dizOi(nome){
-    console.log("Oi ", nome)
-    console.log("Bem-Vindo ao Robotron 2000")
-}
-
-dizOi('Wesley')
+subtrair.addEventListener("click", (evento) => { // função anonima de seta
+    braco.value = parseInt(braco.value) - 1
+}) 
